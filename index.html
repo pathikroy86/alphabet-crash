@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Crash Game</title>
+    <!--Tailwind and DaisyUI CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.5/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Anton and poppins Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!--Font awesome kit-->
+    <script src="https://kit.fontawesome.com/bbfa251da8.js" crossorigin="anonymous"></script>
+    <style>
+        .anton-font {
+            font-family: "Anton", sans-serif;
+        }
+
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <!--Home section-->
+        <section class="bg-[url('images/background.png')] bg-no-repeat bg-center min-h-screen hidden">
+            <div class="min-h-screen flex flex-col justify-center items-center">
+                <h1 class="uppercase anton-font text-9xl mb-8 text-white">Alphabet Clash</h1>
+                <p class="poppins-font text-xl font-medium text-white mb-8">Unleash your Keyboard Kung Fu: Press
+                    "Enter" to
+                    Play</p>
+                <button
+                    class="bg-white hover:bg-slate-300 text-black poppins-font text-2xl font-semibold px-5 py-3 rounded-lg">Play
+                    Now</button>
+            </div>
+        </section>
+        <!--Playground-->
+        <section
+            class="bg-[url('images/background.png')] bg-no-repeat bg-center min-h-screen grid grid-cols-1 gap-10 place-content-center hidden">
+            <div class="bg-[#FFFFFFB3] w-11/12 mx-auto min-h-96 border-8 border-slate-500 rounded-2xl">
+                <p class="text-center text-white poppins-font bg-slate-500 w-2/5 mx-auto py-1 rounded-b-xl">Don't watch
+                    keyboard
+                    while
+                    playing...
+                </p>
+                <h1 class="text-9xl text-black text-center mt-20 poppins-font font-semibold">
+                    Y
+                </h1>
+            </div>
+            <div>
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">q</kbd>
+                    <kbd class="kbd">w</kbd>
+                    <kbd class="kbd">e</kbd>
+                    <kbd class="kbd">r</kbd>
+                    <kbd class="kbd">t</kbd>
+                    <kbd class="kbd">y</kbd>
+                    <kbd class="kbd">u</kbd>
+                    <kbd class="kbd">i</kbd>
+                    <kbd class="kbd">o</kbd>
+                    <kbd class="kbd">p</kbd>
+                </div>
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">a</kbd>
+                    <kbd class="kbd">s</kbd>
+                    <kbd class="kbd">d</kbd>
+                    <kbd class="kbd">f</kbd>
+                    <kbd class="kbd">g</kbd>
+                    <kbd class="kbd">h</kbd>
+                    <kbd class="kbd">j</kbd>
+                    <kbd class="kbd">k</kbd>
+                    <kbd class="kbd">l</kbd>
+                </div>
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">z</kbd>
+                    <kbd class="kbd">x</kbd>
+                    <kbd class="kbd">c</kbd>
+                    <kbd class="kbd">v</kbd>
+                    <kbd class="kbd">b</kbd>
+                    <kbd class="kbd">n</kbd>
+                    <kbd class="kbd">m</kbd>
+                    <kbd class="kbd">/</kbd>
+                </div>
+            </div>
+            <div class="w-11/12 mx-auto flex justify-between">
+                <div>
+                    <button class="bg-[#894189] text-white font-bold px-5 py-2 rounded-full">Life <i
+                            class="fa-solid fa-heart-circle-plus"></i>
+                        <span>1</span></button>
+                </div>
+                <div>
+                    <button class="bg-[#360490] text-white font-bold px-5 py-2 rounded-full">Score <i
+                            class="fa-solid fa-sack-dollar"></i> <span>1</span></button>
+                </div>
+            </div>
+        </section>
+        <!--Score section-->
+        <section
+            class="bg-[url('images/background.png')] bg-no-repeat bg-center min-h-screen flex items-center justify-center">
+            <div class="bg-[#FFFFFF33] text-center text-white poppins-font p-10 rounded-xl">
+                <h1 class="text-6xl font-extrabold mb-5">Score: <span>14</span></h1>
+                <button
+                    class="bg-white hover:bg-slate-300 text-[#010313] text-xl font-semibold px-5 py-2 rounded mb-3">Play
+                    Now</button>
+                <p class="poppins-font text-lg font-medium">Practice will make you pro</p>
+            </div>
+        </section>
+    </main>
+    <script src="utilities.js"></script>
+    <script src="play.js"></script>
+</body>
+
+</html>
